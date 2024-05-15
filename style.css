@@ -1,0 +1,40 @@
+body,
+html {
+  height: 100%; /* Full height for the body and html to enable full centering */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Enables the use of flexbox properties */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: grey; /* Just a background color */
+}
+
+#traffic-light {
+  width: 160px;
+  height: 600;
+  background-color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 6px;
+  align-items: center;
+}
+
+.light {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  border: 10px solid;
+}
+.red {
+  background-color: rgb(194, 30, 30);
+  border-color: rgb(141, 10, 10);
+}
+.yellow {
+  background-color: yellow;
+  border-color: rgb(153, 171, 101);
+}
+.green {
+  background-color: green;
+  border-color: rgb(7, 87, 7);
+}
