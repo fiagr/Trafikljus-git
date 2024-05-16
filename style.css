@@ -5,13 +5,12 @@ html {
   display: flex; /* Enables the use of flexbox properties */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  background-color: grey; /* Just a background color */
+  background-color: grey; /* background color */
 }
 
 #traffic-light {
-  width: 160px;
+  width: 200px;
   background-color: white;
-  padding: 10px; /* Adjust padding to match the desired spacing */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,8 +22,9 @@ html {
 .light {
   width: 150px;
   height: 150px;
-  margin: 10px 0; /* Adjust margin to match the padding and spacing */
-  border: 10px solid;
+  margin: 5px; /* Vertical margin between lights */
+  border: 15px solid;
+  position: relative;
 }
 .red {
   background-color: rgb(194, 30, 30);
@@ -37,4 +37,28 @@ html {
 .green {
   background-color: green;
   border-color: rgb(7, 87, 7);
+}
+
+.small-red {
+  width: 150px;
+  height: 75px;
+  background-color: rgb(255, 99, 99);
+  position: absolute;
+  bottom: 0;
+}
+.small-yellow {
+  width: 75px;
+  height: 75px;
+  background-color: rgb(255, 255, 153);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.small-green {
+  width: 75px;
+  height: 75px;
+  background-color: rgb(144, 238, 144);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
