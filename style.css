@@ -10,20 +10,20 @@ html {
 
 #traffic-light {
   width: 160px;
-  height: 600;
   background-color: white;
-  padding: 16px;
+  padding: 10px; /* Adjust padding to match the desired spacing */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 6px;
+  border: 6px solid white; /* Add border to match the spacing */
   align-items: center;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .light {
   width: 150px;
   height: 150px;
-  margin: 5px;
+  margin: 10px 0; /* Adjust margin to match the padding and spacing */
   border: 10px solid;
 }
 .red {
